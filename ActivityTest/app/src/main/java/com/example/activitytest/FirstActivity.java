@@ -25,8 +25,8 @@ public class FirstActivity extends BaseActivity
             @Override
             public void onClick(View view)
             {
-                Intent intent = new Intent(FirstActivity.this, SecondActivity.class);
-                startActivityForResult(intent, 1);
+                //启动第二个活动
+                SecondActivity.actionStart(FirstActivity.this, "data1", "data2");
             }
         });
     }

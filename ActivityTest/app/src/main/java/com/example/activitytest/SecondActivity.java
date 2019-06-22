@@ -1,6 +1,7 @@
 package com.example.activitytest;
 
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -33,5 +34,13 @@ public class SecondActivity extends BaseActivity
     public void onBackPressed()
     {
         ActivityCollector.finishAll();
+    }
+
+    public static void actionStart(Context context, String data1, String data2)
+    {
+        Intent intent = new Intent(context, SecondActivity.class);
+        intent.putExtra("param1", data1);
+        intent.putExtra("param2", data2);
+        context.startActivity(intent);
     }
 }
