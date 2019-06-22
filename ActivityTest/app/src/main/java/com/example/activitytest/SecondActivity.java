@@ -20,10 +20,7 @@ public class SecondActivity extends BaseActivity
             @Override
             public void onClick(View view)
             {
-                Intent intent = new Intent();
-                intent.putExtra("data_return", "Hello FirstActivity");
-                setResult(RESULT_OK,intent);
-                finish();
+                ActivityCollector.finishAll();
             }
         });
     }
@@ -35,10 +32,6 @@ public class SecondActivity extends BaseActivity
     @Override
     public void onBackPressed()
     {
-        //super.onBackPressed();
-        Intent intent = new Intent();
-        intent.putExtra("data_return", "Hello FirstActivity");
-        setResult(RESULT_OK,intent);
-        finish();
+        ActivityCollector.finishAll();
     }
 }
