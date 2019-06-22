@@ -1,7 +1,6 @@
 package com.example.activitytest;
 
 import androidx.annotation.Nullable;
-import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -12,7 +11,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
-public class FirstActivity extends AppCompatActivity
+public class FirstActivity extends BaseActivity
 {
     public static final String TAG = FirstActivity.class.getSimpleName();
     @Override
