@@ -61,7 +61,6 @@ public class FirstActivity extends AppCompatActivity
 
     /**
      * Dispatch incoming result to the correct fragment.
-     *
      * @param requestCode requestCode
      * @param resultCode resultCode
      * @param data data
